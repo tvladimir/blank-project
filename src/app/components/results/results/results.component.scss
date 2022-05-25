@@ -1,0 +1,29 @@
+.score-list{
+  width: 90%;
+  max-width: 440px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.score-line{
+  width: 100%;
+  display: block;
+}
+
+.score { float: left;  overflow: hidden; white-space: nowrap }
+.user-name { float: left; overflow: hidden }
+
+.score:after { content: ".................................................................................." }
+
+.new-gane-button{
+  position: relative;
+    display: block;
+    margin: 0 auto;
+    background: #c1e7ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

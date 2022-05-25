@@ -1,0 +1,8 @@
+<form [formGroup]="userInfo" [ngClass]="{'form': true}" (ngSubmit)="onSubmit(userInfo)" id="ngForm">
+
+    <label>UserName</label>
+    <input type="text" [ngClass]="{'userName': true}" class="userName" formControlName="userName">
+
+    <button form="ngForm" [ngClass]="{'submitButton': true}" type="submit">Start Game</button>
+
+</form>

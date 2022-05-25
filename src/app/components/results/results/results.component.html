@@ -1,0 +1,9 @@
+<h2 [ngStyle]="{'width': '100%', 'text-align': 'center'}" >Score list</h2>
+<ul [ngClass]="{'score-list': true}">
+  <li [ngClass]="{'score-line': true}" *ngFor="let score of scoreList;">
+    <span [ngClass]="{'score': true}">{{score.score}}</span>
+    <span [ngClass]="{'user-name': true}">{{score.userName}}</span>
+  </li>
+</ul>
+
+<button [ngClass]="{'new-gane-button': true}"(click)="startNewGame()">Start new Game</button>

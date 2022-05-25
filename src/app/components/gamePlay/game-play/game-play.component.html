@@ -1,0 +1,13 @@
+<div>
+    <h2 [ngClass]="{'question-text': true}">{{question?.question}}</h2>
+
+    <div [ngClass]="{'answers-list': true}">
+      <button [ngClass]="{'answers-button': true}"
+              *ngFor="let answer of question?.all_Answers"
+              (click)="onClickAnswer(answer)">
+        <span>
+          {{answer}}
+        </span>
+      </button>
+    </div>
+</div>

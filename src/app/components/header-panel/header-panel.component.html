@@ -1,0 +1,14 @@
+<div>
+    <span *ngIf="(userName$ | async) as userName" [ngClass]="{'user-name': true}"> UserName: {{userName}}</span>
+    <span *ngIf="(lives$ | async) as lives">
+      Lives:
+      <span>
+        <span [ngStyle]="{'color': 'red', 'padding': '0 4px'}" *ngFor="let live of counter(lives); index as i">
+          <fa-icon [icon]="faHeart"></fa-icon>
+        </span>
+      </span>
+    </span>
+    <span  *ngIf="currentQuestionIndex < max_count" [ngClass]="{'question': true}">
+      Question: {{currentQuestionIndex + 1}} from {{max_count}}
+    </span>
+</div>
