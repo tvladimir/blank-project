@@ -4,9 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserInfoComponent } from './components/userInfo/user-info/user-info.component';
-import { GamePlayComponent } from './components/gamePlay/game-play/game-play.component';
-import { ResultsComponent } from './components/results/results/results.component';
+import { UserInfoComponent } from './components/user-info/user-info.component';
+import { GamePlayComponent } from './components/game-play/game-play.component';
+import { ResultsComponent } from './components/results/results.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderPanelComponent } from './components/header-panel/header-panel.component';

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GamePlayComponent } from './components/gamePlay/game-play/game-play.component';
-import { ResultsComponent } from './components/results/results/results.component';
-import { UserInfoComponent } from './components/userInfo/user-info/user-info.component';
+import { GamePlayComponent } from './components/game-play/game-play.component';
+import { ResultsComponent } from './components/results/results.component';
+import { UserInfoComponent } from './components/user-info/user-info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/start', pathMatch: 'full' },
